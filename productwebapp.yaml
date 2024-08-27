@@ -11,6 +11,9 @@ spring:
 
 kafka:
   bootstrapAddress: localhost:1234
+  topics:
+    product: product
+    list: listOfProducts
   producer:
     retries: 1
     batch-size: 16384
