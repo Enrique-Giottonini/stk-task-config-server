@@ -3,7 +3,9 @@ server:
 
 kafka:
   bootstrapAddress: localhost:1234
-  subscribeTopic: products
+  topics:
+    product: product
+    list: listOfProducts
   consumer:
     enable-auto-commit: false
     auto-commit-interval-ms: 100
